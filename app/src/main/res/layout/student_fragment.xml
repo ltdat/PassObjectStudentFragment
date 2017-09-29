@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/txv_HoTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_QueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quê quán"
+        android:layout_below="@id/txv_HoTenSV"/>
+
+    <EditText
+        android:id="@+id/edt_NgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày tháng năm sinh"
+        android:layout_below="@+id/edt_QueQuan"/>
+    <EditText
+        android:id="@+id/edt_GioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giới tính"
+        android:layout_below="@+id/edt_NgaySinh"/>
+    <EditText
+        android:id="@+id/edt_Lop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lớp"
+        android:layout_below="@+id/edt_GioiTinh"/>
+    <EditText
+        android:id="@+id/edt_KhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Khóa học"
+        android:layout_below="@+id/edt_Lop"/>
+
+    <Button
+        android:id="@+id/btn_XacNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:layout_below="@+id/edt_KhoaHoc"/>
+</RelativeLayout>
